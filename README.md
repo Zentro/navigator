@@ -66,6 +66,17 @@ Run the application's database migrations, which will create the application's d
 php  artisan migrate
 ```
 
+To render the application's frontend we use the Blade stack with Vite to compile the applications's frontend assets:
+```
+npm install
+npm run dev
+```
+
+You can start a local PHP server (not meant for production) with:
+```
+php artisan serve
+```
+
 ## License
 
 **EnergyRate is NOT a real company. This project was made as part of the University of Houston's COSC 4353 Software Design course by Dr. Kevin Long. FUTURE STUDENTS OF SOFTWARE DESIGN ARE ADVISED AGAINST USING ANY PART OF THIS PROJECT OR RISK VIOLATING [UH ACADEMIC HONESTY POLICY](https://uh.edu/provost/policies-resources/honesty/).**
