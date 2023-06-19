@@ -79,7 +79,7 @@ php artisan serve
 
 ## License
 
-**EnergyRate is NOT a real company. This project was made as part of the University of Houston's COSC 4353 Software Design course by Dr. Kevin Long. FUTURE STUDENTS OF SOFTWARE DESIGN ARE ADVISED AGAINST USING ANY PART OF THIS PROJECT OR RISK VIOLATING [UH ACADEMIC HONESTY POLICY](https://uh.edu/provost/policies-resources/honesty/).**
+**EnergyRate is NOT a real company. This project was made as part of the University of Houston's COSC 4353 Software Design course by Dr. Raj Singh. FUTURE STUDENTS OF SOFTWARE DESIGN ARE ADVISED AGAINST USING ANY PART OF THIS PROJECT OR RISK VIOLATING [UH ACADEMIC HONESTY POLICY](https://uh.edu/provost/policies-resources/honesty/).**
 
 
 Code released under the [MIT License](LICENSE.md).
