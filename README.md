@@ -63,7 +63,7 @@ Be sure to have MySQL running before running the web server.
 
 Run the application's database migrations, which will create the application's database tables:
 ```
-php  artisan migrate
+php artisan migrate
 ```
 
 To render the application's frontend we use the Blade stack with Vite to compile the applications's frontend assets:
