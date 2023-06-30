@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -40,6 +40,20 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'profile_completed_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function isProfileComplete(): bool
+    {
+        return $this->profile_completed_at !== null;
+    }
+
+    public function markProfileAsComplete()
+    {
+        return $this->forceFill([
+            'profile_completed_at' => $this->freshTimestamp(),
+        ])->save();
+    }
+
 }

@@ -21,13 +21,14 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified', 'setup'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileEditController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileEditController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileEditController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/profile/finish', [ProfileSetupController::class, 'create'])->name('profile.finish-setup');
+    Route::get('/profile', [ProfileEditController::class, 'edit'])->middleware('setup')->name('profile.edit');
+    Route::patch('/profile', [ProfileEditController::class, 'update'])->middleware('setup')->name('profile.update');
+    Route::delete('/profile', [ProfileEditController::class, 'destroy'])->middleware('setup')->name('profile.destroy');
+    Route::get('/profile/setup', [ProfileSetupController::class, 'create'])->name('profile.setup');
+    Route::patch('/profile/setup', [ProfileSetupController::class, 'update'])->name('profile.setup.update');
 });
 
 require __DIR__.'/auth.php';
