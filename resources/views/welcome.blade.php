@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Laravel</title>
+  <title>{{ config('app.name', 'Laravel') }}</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.bunny.net">
@@ -28,7 +28,6 @@
           <nav class="flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
-              <img alt="Your Company" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600">
             </a>
             <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden">
               <span class="sr-only">Open main menu</span>
@@ -42,9 +41,9 @@
 
               <a href="#" class="font-semibold leading-6 text-gray-900">Features</a>
 
-              <a href="#" class="font-semibold leading-6 text-gray-900">Register</a>
+              <a href="{{ url('/register') }}" class="font-semibold leading-6 text-gray-900">Register</a>
 
-              <a href="#" class="font-semibold leading-6 text-gray-900">Log In <span aria-hidden="true">&rarr;</span></a>
+              <a href="{{ url('/login') }}" class="font-semibold leading-6 text-gray-900">Log In <span aria-hidden="true">&rarr;</span></a>
             </div>
           </nav>
           <!-- Mobile menu, show/hide based on menu open state. -->
@@ -60,7 +59,6 @@
                 </button>
                 <a href="#" class="-m-1.5 p-1.5">
                   <span class="sr-only">Your Company</span>
-                  <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
                 </a>
               </div>
               <div class="mt-6 space-y-2">
