@@ -17,7 +17,7 @@ class ProfileSetupRequest extends FormRequest
     {
         return [
             'address' => ['max:255'],
-            'apartment_number' => ['max:255'],
+            //'apartment_number' => ['max:255'],
             'zip_code' => ['max:5'],
             'city' => ['max:255'],
             'state' => ['max:255'],
