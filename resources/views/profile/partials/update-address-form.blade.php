@@ -19,12 +19,6 @@
             </div>
 
             <div>
-                <x-input-label for="apartment_number" :value="__('Street Address 2')" />
-                <x-text-input id="street_address" name="street_address" type="text" class="mt-1 block w-full" autofocus autocomplete="street_address" required/>
-                <x-input-error class="mt-2" :messages="$errors->get('apartment_number')" />
-            </div>
-
-            <div>
                 <x-input-label for="zip_code" :value="__('ZIP Code')" />
                 <x-text-input id="zip_code" name="zip_code" type="text" class="mt-1 block w-full" required autofocus autocomplete="zip_code" required/>
                 <x-input-error class="mt-2" :messages="$errors->get('zip_code')" />
@@ -37,8 +31,8 @@
             </div>
 
             <div>
-                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">State</label>
-                <select id="countries" class="bg-gray-900 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-900 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+            <x-input-label for="city" :value="__('State')" />
+                <select id="countries" class="mt-1 block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm" required>
                 
 
                     <option value="AL">Alabama</option>
