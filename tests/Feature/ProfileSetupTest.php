@@ -33,7 +33,6 @@ class ProfileSetupTest extends TestCase
             ->actingAs($user)
             ->patch('/profile/setup', [
                 'address' => '123 Test St',
-                'apartment_number' => '123',
                 'zip_code' => '123',
                 'city' => 'Test',
                 'state' => 'Test'
@@ -45,6 +44,6 @@ class ProfileSetupTest extends TestCase
 
         $user->refresh();
 
-        $response->assertOk();
+        $this->assertNotNull($user->profile_completed_at);
     }
 }
