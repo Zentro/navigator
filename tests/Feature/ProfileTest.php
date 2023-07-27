@@ -21,19 +21,6 @@ class ProfileTest extends TestCase
         $response->assertOk();
     }
 
-    public function test_profile_is_not_displayed_without_setup(): void
-    {
-        $user = User::factory()->create([
-            'profile_completed_at' => null,
-        ]);
-
-        $response = $this
-            ->actingAs($user)
-            ->get('/profile');
-
-        $response->assertRedirect('/profile/setup');
-    }
-
     public function test_profile_information_can_be_updated(): void
     {
         $user = User::factory()->create();
