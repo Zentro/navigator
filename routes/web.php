@@ -39,14 +39,10 @@ Route::get('/quoteform', function () {
     return view('quoteform');
 })->middleware(['auth', 'verified'])->name('quoteform');
 
-
-
-use App\Http\Controllers\HistoryController;
-
-Route::get('/quotehistory', [HistoryController::class, 'showHistory'])
-    ->name('fuelquotehistory');
+Route::get('/quotehistory', function () {
+    return view('fuelquotehistory');
+})->middleware(['auth', 'verified'])->name('fuelquotehistory');
 
 use App\Http\Controllers\FormController;
 
-Route::get('/quoteform', [FormController::class, 'showForm'])->name('quoteform.show');
 Route::post('/quoteform/submit', [FormController::class, 'submit'])->middleware(['auth', 'verified'])->name('quoteform.submit');

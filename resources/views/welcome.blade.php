@@ -11,13 +11,12 @@
   <link rel="preconnect" href="https://fonts.bunny.net">
   <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
- 
   <!-- Scripts -->
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   </style>
 </head>
 
-<body class="antialiased" >
+<body class="antialiased">
   <div class="relative bg-white">
     <div class="mx-auto max-w-7xl">
       <div class="relative z-10 lg:w-full lg:max-w-2xl">
@@ -79,13 +78,11 @@
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
             <div class="hidden sm:mb-10 sm:flex">
               <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                
-                Anim aute id magna aliqua ad ad non deserunt sunt. <a href="#read-more-paragraph" class="whitespace-nowrap font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>About Us <span aria-hidden="true">&rarr;</span></a>
-                
+                Anim aute id magna aliqua ad ad non deserunt sunt. <a href="#" class="whitespace-nowrap font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
               </div>
             </div>
-            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">EnergyRate Navigator</h1>
-            <p class="mt-6 text-lg leading-8 text-gray-600">Welcome to Navigator, where we care about both quality and quantity!</p>
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
             <div class="mt-10 flex items-center gap-x-6">
               <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
               <a href="#" class="text-base font-semibold leading-7 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
@@ -95,21 +92,9 @@
       </div>
     </div>
     <div class="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img class="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full" src="https://images.unsplash.com/photo-1588011930968-eadac80e6a5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="">
+      <img class="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80" alt="">
     </div>
   </div>
-
-<div class="max-w-3xl mx-auto px-6 py-12" id="read-more-section">
-  <h2 class="text-3xl font-semibold text-gray-900" id="read-more-heading">About Us</h2>
-  <p class="mt-4 text-lg leading-7 text-gray-600" id="read-more-paragraph">
-  At EnergyRate Navigator, we offer a wide range of top-tier fuels engineered to optimize performance, increase fuel economy, and reduce emissions. Whether you need gasoline, diesel, or alternative fuel options, we've got you covered. Our cutting-edge technology ensures a seamless and eco-friendly driving experience, empowering you to go further with each drop. Choose EnergyRate Navigator for cleaner, greener, and more powerful journeys. Unleash the potential of your vehicle with our industry-leading fuel products and revolutionize the way you drive.
-</p>
-</div>
-
-  
-
-
-
 
   <footer class="bg-white" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
