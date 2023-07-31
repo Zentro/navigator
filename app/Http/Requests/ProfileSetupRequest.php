@@ -16,11 +16,10 @@ class ProfileSetupRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'address' => ['max:255'],
-            'apartment_number' => ['max:255'],
-            'zip_code' => ['max:5'],
-            'city' => ['max:255'],
-            'state' => ['max:255'],
+            'address' => ['required','string','max:255'],
+            'city' => ['required','string','max:255'],
+            'zip_code' => ['required','integer','digits_between:1,10'],
+            'state' => ['required','string','max:255'],
         ];
     }
 }
