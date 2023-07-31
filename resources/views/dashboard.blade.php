@@ -13,12 +13,12 @@
                 </div>
             </div>
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6 mt-4 flex justify-center space-x-10">
-                <button class="px-10 py-8 bg-blue-500 text-white rounded hover:bg-blue-800 transition duration-300 text-xl font-bold">
+                <a href="/quoteform" class="px-10 py-8 bg-blue-500 text-white rounded hover:bg-blue-800 transition duration-300 text-xl font-bold">
                     Create A New Fuel Quote
-                </button>
-                <button class="px-10 py-8 bg-green-500 text-white rounded hover:bg-green-800 transition duration-300 text-xl font-bold">
+                </a>
+                <a href="/quotehistory" class="px-10 py-8 bg-green-500 text-white rounded hover:bg-green-800 transition duration-300 text-xl font-bold">
                     Check A Prior Fuel Quote
-                </button>
+                </a>
             </div>
 
         </div>
