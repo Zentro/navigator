@@ -24,11 +24,11 @@ class ProfileSetupController extends Controller
      */
     public function update(ProfileSetupRequest $request): RedirectResponse
     {
-        assert($request->user()->fill($request->validated()) == true);
+        $request->user()->fill($request->validated());
+
+        $request->user()->save();
 
         $request->user()->markProfileAsComplete();
-
-        assert($request->user()->save() == true);
 
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }

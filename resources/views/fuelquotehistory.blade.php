@@ -5,8 +5,23 @@
         </h2>
     </x-slot>
 
+    @if(session('success'))
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+          
+            
+            
+    <div class="p-6 text-green-500">{{ session('success') }}</div>
 
 
+
+
+            </div>
+        </div>
+    </div>
+
+    @endif
 
     
 
@@ -30,23 +45,18 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-                            <td class="px-8 py-4 border-b border-r border-gray-300">07/15/2023</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">15</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">1234 Main Street, Houston, TX 77004</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">07/20/2023</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">$3.83</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">$57.45</td>
-                        </tr>
-                        <tr class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-                        <td class="px-8 py-4 border-b border-r border-gray-300">08/24/2023</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">10</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">1234 Main Street, Houston, TX 77004</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">08/31/2023</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">$3.51</td>
-                            <td class="px-8 py-4 border-b border-r border-gray-300">$35.10</td>
-                        </tr>
-                        <!-- Add more rows as needed -->
+                        @foreach ($quotes as $quote)
+                                <tr class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                                    <td class="px-8 py-4 border-b border-r border-gray-300">{{ $quote->purchase_datetime }}</td>
+                                    <td class="px-8 py-4 border-b border-r border-gray-300">{{ $quote->gallons_requested }}</td>
+                                    <td class="px-8 py-4 border-b border-r border-gray-300">{{ $quote->delivery_address }}</td>
+                                    <td class="px-8 py-4 border-b border-r border-gray-300">{{ $quote->delivery_date }}</td>
+                                    <td class="px-8 py-4 border-b border-r border-gray-300">${{ number_format($quote->price_per_gallon, 2) }}</td>
+                                    <td class="px-8 py-4 border-b border-r border-gray-300">${{ number_format($quote->total_price, 2) }}</td>
+                                </tr>
+                            @endforeach
+                        
+
                         </tbody>
                     </table>
                     </div>
@@ -54,7 +64,7 @@
             </div>
         </div>
     </div>
-    
+
 </x-app-layout>
 
 
