@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg flex justify-center">
                 <div class="p-6 text-gray-900 dark:text-gray-100 font-bold text-2xl">
-                    {{ __("Welcome to Energy Rate Navigator!") }}
+                    {{ __("Welcome to EnergyRate Navigator!") }}
                 </div>
             </div>
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6 mt-4 flex justify-center space-x-10">
